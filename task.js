@@ -44,6 +44,7 @@ authForm.addEventListener('submit', (e) => {
 });
 
 const logoutBtn = document.getElementById('signout__btn');
-logoutBtn.addEventListener('click', () => {
+logoutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     logout();
 });
